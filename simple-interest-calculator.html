@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .simple {
+        background: powderblue;
+        height: 880px;
+        width: 500px;
+        text-align: center;
+        font-size: 20px;
+        border: double;
+        font-family: monospace;
+
+    }
+
+    .simple:hover {
+        color: red;
+    }
+
+    .t {
+        padding: 15px;
+        padding-bottom: 10px;
+        border: double;
+        margin-bottom: 10px;
+    }
+
+    .r {
+        padding: 15px;
+        padding-bottom: 10px;
+        border: double;
+    }
+
+    .p {
+        padding: 15px;
+        padding-bottom: 10px;
+        border: double;
+    }
+
+    #btn {
+        padding: 10px 20px;
+        color: blue;
+        border: double;
+    }
+
+    #btn:hover {
+        color: red;
+    }
+
+    .img {
+        background: white;
+        height: 300px;
+        width: 500px;
+        margin-top: 70px;
+    }
+
+    .src {
+        height: 300px;
+        width: 500px;
+    }
+</style>
+
+<body>
+    <div class="simple">
+        <h1 class="heading">Simple Interest Calculation</h1>
+        <div class="img"> <img
+                src="data:image/png;base64,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"
+                class="src"></div>
+        <label for="">Time:</label>
+        <br>
+        <input class="t" type="numder" placeholder="time">
+        <br><br>
+        <label for="">Rate:</label>
+        <br>
+        <input class="r" type="number" placeholder="rate">
+        <br><br>
+        <label for="">Initial principal:</label>
+        <br>
+        <input class="p" type="number" placeholder="pr">
+        <br><br>
+        <button id="btn">click</button>
+
+    </div>
+    <script src="simple-interest-calculator.js"></script>
+</body>
+
+</html>
